@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A C# 10 / .NET 6 minimal API example API that generates html
+A C# 10 / .NET 6 minimal API example service that generates html
 
 ## Developing
 
