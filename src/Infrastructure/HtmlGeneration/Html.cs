@@ -1,4 +1,6 @@
-﻿namespace HtmlService.Infrastructure;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace HtmlService.Infrastructure;
 
 public class Html
 {
@@ -8,6 +10,13 @@ public class Html
 
     public async Task<IResult> Content(string viewName, object model)
     {
+        _ = !MinimalValidation.TryValidate(model, out var errors);
+
+        if (errors.Any())
+        {
+            return Results.BadRequest(errors);
+        }
+
         var html = await _viewRenderService.RenderToStringAsync(viewName, model);
         return Results.Content(html, "text/html");
     }
