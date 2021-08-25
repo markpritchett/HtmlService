@@ -1,17 +1,13 @@
 using Microsoft.OpenApi.Models;
 using HtmlService.Infrastructure;
+using HtmlService.Infrastructure.Swagger;
 using HtmlService.Views;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddHtmlGeneration();
-builder.Services.AddEndpointsApiExplorer();
-
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new() { Title = "HtmlService", Version = "v1" });
-});
+builder.Services.AddSwaggerWithVersions();
 
 var app = builder.Build();
 
@@ -19,10 +15,9 @@ var app = builder.Build();
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
-    app.UseSwagger();
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HtmlService v1"));
 }
 
+app.UseSwaggerWithVersions();
 app.UseHttpsRedirection();
 
 app.MapPost("v1/welcome-email", async (WelcomeEmailModelV1 model, Html html) =>
