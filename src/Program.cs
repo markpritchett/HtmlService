@@ -1,8 +1,3 @@
-using Microsoft.OpenApi.Models;
-using HtmlService.Infrastructure;
-using HtmlService.Infrastructure.Swagger;
-using HtmlService.Views;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
