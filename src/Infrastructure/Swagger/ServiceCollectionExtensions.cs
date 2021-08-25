@@ -15,6 +15,8 @@ public static class ServiceCollectionExtensions
             {
                 return desc?.RelativePath?.StartsWith(version, StringComparison.InvariantCultureIgnoreCase) == true;
             });
+
+            c.OperationFilter<EmailOperationFilter>();
         });
     }
 }
