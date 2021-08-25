@@ -15,5 +15,5 @@ It was created using **Visual Studio 17.0.0 Preview 3.1**.  As this is a pre-rel
 - [x] Use `model validation` to validate requests
 - [x] Use `Razor` templates to define html templates
 - [x] Use [Swagger UI](https://swagger.io/tools/swagger-ui/)
-- [ ] Use modern C# features, such as [top-level statements](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) along with `Global using directives`
+- [x] Use modern C# features, such as [top-level statements](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/tutorials/top-level-statements) along with `Global using directives`
 and `File-scoped namespace declaration` as defined [here](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10)
