@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    @inject IWebHostEnvironment Env
+    @if (!Env.IsProduction())
+    {
+        <p>
+            This is the <strong>@Env.EnvironmentName</strong> version of the system.
+        </p>
+    }
+    @RenderBody()
+</body>
+</html>
