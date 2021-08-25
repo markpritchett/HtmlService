@@ -17,6 +17,8 @@ public static class ServiceCollectionExtensions
             });
 
             c.OperationFilter<EmailOperationFilter>();
+
+            c.IncludeXmlComments($"{AppContext.BaseDirectory}{Path.DirectorySeparatorChar}{typeof(ServiceCollectionExtensions).Assembly.GetName().Name}.xml");
         });
     }
 }
