@@ -1,4 +1,6 @@
-﻿namespace HtmlService.Infrastructure;
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace HtmlService.Infrastructure;
 
 public static class ServiceCollectionExtensions
 {

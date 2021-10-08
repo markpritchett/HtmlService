@@ -1,4 +1,6 @@
-﻿namespace HtmlService.Infrastructure.Swagger;
+﻿using Microsoft.AspNetCore.Builder;
+
+namespace HtmlService.Infrastructure.Swagger;
 
 public static class WebApplicationExtensions
 {

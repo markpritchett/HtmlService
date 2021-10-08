@@ -6,7 +6,7 @@ A C# 10 / .NET 6 minimal API example service that generates html
 
 ## Developing
 
-It was created using **Visual Studio 17.0.0 Preview 3.1**.  As this is a pre-release, earlier or later versions might not work as expected.
+Last updated with  **Visual Studio Version 17.0.0 Preview 4.1** and **6.0.100-rc.1.21463.6**.  As this is a pre-release, earlier or later versions might not work as expected.
 
 ## Goals
 

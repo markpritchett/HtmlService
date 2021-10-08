@@ -1,4 +1,6 @@
-﻿namespace HtmlService;
+﻿using Microsoft.AspNetCore.Builder;
+
+namespace HtmlService;
 
 public static class Routes
 {

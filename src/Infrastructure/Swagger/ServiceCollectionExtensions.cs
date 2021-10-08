@@ -1,4 +1,8 @@
-﻿namespace HtmlService.Infrastructure.Swagger;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.IO;
+
+namespace HtmlService.Infrastructure.Swagger;
 
 public static class ServiceCollectionExtensions
 {
